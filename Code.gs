@@ -32,7 +32,7 @@ function doPost(e) {
       sheet = ss.insertSheet(REG_SHEET);
       sheet.appendRow([
         "Timestamp", "Parent Name", "Parent Number",
-        "Student Name", "Student Number"
+        "Student Name", "Student Number", "City"
       ]);
     }
 
@@ -47,7 +47,8 @@ function doPost(e) {
         data.parentName    || "",
         data.parentNumber  || "",
         data.studentName   || "",
-        data.studentNumber || ""
+        data.studentNumber || "",
+        data.city          || ""
       ]);
     }
 
